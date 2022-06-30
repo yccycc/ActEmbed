@@ -3,14 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@android:color/holo_green_light"
     android:layout_height="match_parent"
-    tools:context=".Secondary1">
-
-    <Button
-        android:id="@+id/secondarySub1"
-        android:text="secondarySub1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+    tools:context=".SecondarySub1">
 
 </androidx.constraintlayout.widget.ConstraintLayout>

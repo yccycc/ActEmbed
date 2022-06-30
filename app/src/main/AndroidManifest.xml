@@ -11,9 +11,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ActEmbed">
         <activity
-            android:label="Secondary2"
-            android:name=".Secondary2"
+            android:label="SecondarySub1"
+            android:name=".SecondarySub1"
             android:exported="false" />
+        <activity
+            android:name=".Secondary2"
+            android:exported="false"
+            android:label="Secondary2" />
         <activity
             android:name=".PrimaryAct"
             android:exported="true"

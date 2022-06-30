@@ -12,8 +12,8 @@
             window:primaryActivityName=".PrimaryAct"
             window:secondaryActivityName=".Secondary1"/>
         <SplitPairFilter
-            window:primaryActivityName=".PrimaryAct"
-            window:secondaryActivityName=".Secondary2"/>
+            window:primaryActivityName=".Secondary1"
+            window:secondaryActivityName=".SecondarySub1"/>
 <!--        <SplitPairFilter-->
 <!--            window:primaryActivityName="*"-->
 <!--            window:secondaryActivityName="*/*"-->

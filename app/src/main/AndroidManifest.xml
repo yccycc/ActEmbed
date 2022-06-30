@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.actembed">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ActEmbed">
+        <activity
+            android:label="Secondary2"
+            android:name=".Secondary2"
+            android:exported="false" />
+        <activity
+            android:name=".PrimaryAct"
+            android:exported="true"
+            android:label="PrimaryAct">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Secondary1"
+            android:exported="true"
+            android:label="Secondary1" />
+        <activity
+            android:name=".PrimaryPlaceholderAct"
+            android:exported="true"
+            android:label="PrimaryPlaceholderAct" />
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="${applicationId}.androidx-startup"
+            android:exported="false"
+            tools:node="merge">
+
+            <!-- This entry makes ExampleWindowInitializer discoverable. -->
+            <meta-data
+                android:name="androidx.window.sample.embedding.ExampleWindowInitializer"
+                android:value="androidx.startup" />
+        </provider>
+    </application>
+
+</manifest>

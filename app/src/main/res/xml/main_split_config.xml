@@ -1,0 +1,32 @@
+<!-- The split configuration for activities. -->
+<resources
+    xmlns:window="http://schemas.android.com/apk/res-auto">
+
+    <!-- Automatically split the following activity pairs. -->
+    <SplitPairRule
+        window:splitRatio="0.5"
+        window:splitMinWidth="300dp"
+        window:finishPrimaryWithSecondary="true"
+        window:finishSecondaryWithPrimary="true">
+        <SplitPairFilter
+            window:primaryActivityName=".PrimaryAct"
+            window:secondaryActivityName=".Secondary1"/>
+        <SplitPairFilter
+            window:primaryActivityName=".PrimaryAct"
+            window:secondaryActivityName=".Secondary2"/>
+<!--        <SplitPairFilter-->
+<!--            window:primaryActivityName="*"-->
+<!--            window:secondaryActivityName="*/*"-->
+<!--            window:secondaryActivityAction="android.intent.action.VIEW"/>-->
+    </SplitPairRule>
+
+     Automatically launch a placeholder for the list activity.
+    <SplitPlaceholderRule
+        window:placeholderActivityName=".PrimaryPlaceholderAct"
+        window:splitRatio="0.5"
+        window:splitMinWidth="300dp">
+        <ActivityFilter
+            window:activityName=".PrimaryAct"/>
+    </SplitPlaceholderRule>
+
+</resources>
